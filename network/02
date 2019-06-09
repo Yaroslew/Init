@@ -1,0 +1,2 @@
+fconfig | grep broadcast | cut -c 50- 
+ping  192.168.23.255 -c1 | arp -a| cut -f1 -d")" | cut -f2 -d"("
